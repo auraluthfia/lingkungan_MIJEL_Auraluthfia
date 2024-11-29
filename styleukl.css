@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none  ;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+li a{
+    margin-left: 40px;
+}
+
+
+/* navbar*/
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;  
+  padding: 25px 35px;
+  z-index: 1000;
+
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #FF7D29;
+}
+.nav-link li {
+    margin: 0 30px;
+}
+.navbar-logo h1{
+    font-size: 40px;
+    color: #FF7D29;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url(coveer.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items:flex-end;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: #FF7D29;
+}
+.header-content h2{
+    color: black;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.ctn {
+    padding: 8px 20px;
+    background-color: #FFBF78;
+    border-radius: 20px;
+    color:black ;
+}
+.header-content h1 {
+    font: size 7vmin;
+    margin-top: 4px;
+    margin-bottom: 170px;
+    margin-left: 120px;
+
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*home*/
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.info{
+    margin-top: 60px; /* Memberikan ruang agar konten tidak tertutupi navbar */
+    padding: 20px;
+    width: 80%;
+    margin: 80px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info h1{
+    font-size: 27px;
+    color: #FF7D29;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 140px;
+    margin-top: 10px;
+}
+
+
+/* penjadwalan */
+
+
+
+  
+/* mobile device */
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #FFEEA9;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0;
+        border-bottom-right-radius: 30%; 
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+}

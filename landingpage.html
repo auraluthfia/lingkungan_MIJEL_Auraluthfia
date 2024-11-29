@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIJEL</title>
+    <link rel="stylesheet" href="styleukl.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <a href="#logo">MIJEL</h1>
+        <ul class="nav-link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jadwal">Penjadwalan</a></li>
+            <li><a href="#toko">Toko Kami</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li  class="ctn" ><a href="#"></a>Contact</li>
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Welcome to </h2>
+            <h1>MIJEL</h1>
+            <a href="#start" class="ctn">Started</a>
+            
+        </div>
+    </header>
+    <!--Home Section-->
+    <div class="home" id="home">
+        <div class="info">
+            <h1> MIJEL</h1>
+            <p>Website ini bertujuan untuk memberikan informasi tentang minyak jelantah, termasuk pemahaman mengenai proses pengolahan, bahaya jika dibuang sembarangan, serta manfaat yang dapat diperoleh dari pemanfaatannya yang berkelanjutan.</p>
+
+        </div>
+    </section>
+
+<!-- Penjadwalan -->
+
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlink = document.querySelector('.nav-link')
+    
+        menuBtn.addEventListener('click',()=>{
+            navlink.classList.toggle('mobile-menu')
+        })
+         
+    </script>
+</body>
+</html>
