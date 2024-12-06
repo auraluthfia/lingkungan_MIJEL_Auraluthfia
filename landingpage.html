@@ -4,39 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIJEL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styleukl.css">
 </head>
 <body>
     <!--navbar-->
     <nav class="navbar">
-        <a href="#logo">MIJEL</h1>
+        <h1 class="logo">MIJEL</h1>
         <ul class="nav-link">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#header">Home</a></li>
             <li><a href="#jadwal">Penjadwalan</a></li>
             <li><a href="#toko">Toko Kami</a></li>
             <li><a href="#about">Tentang Kami</a></li>
-            <li  class="ctn" ><a href="#"></a>Contact</li>
+            <li ><a href="#contact">Contact</a></li>
         </ul>
-        <img src="menu-btn.png" alt="" class="menu-btn">
+        <img src="menu-line.png" alt="" class="menu-btn">
     </nav>
     <header>
-        <div class="header-content">
+        <div class="Home" id="header">
+            <div class="header-content">
             <h2>Welcome to </h2>
             <h1>MIJEL</h1>
+            <div class="login">
             <a href="#start" class="ctn">Started</a>
-            
+            </div>
         </div>
     </header>
-    <!--Home Section-->
-    <div class="home" id="home">
-        <div class="info">
-            <h1> MIJEL</h1>
-            <p>Website ini bertujuan untuk memberikan informasi tentang minyak jelantah, termasuk pemahaman mengenai proses pengolahan, bahaya jika dibuang sembarangan, serta manfaat yang dapat diperoleh dari pemanfaatannya yang berkelanjutan.</p>
+<!--login page-->
+<div class="start" id="start">
+<div class="login-box">
+    <div class="login-header">
+        <h1>Register</h1>
+    </div>
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="nama" autocomplete="off" required>
+    </div>
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="nomor hp " autocomplete="off" required>
+    </div>
+    <div class="input-box">
+        <input type="email" class="input-field" placeholder="email " autocomplete="off" required>
+    </div>   <div class="input-box">
+        <input type="password" class="input-field" placeholder="password " autocomplete="off" required>
+    </div>
+    <div class="forgot">
+        <section>
+            <input type="checkbox" id="check">
+            <label for="check">Remember me</label>
+        </section>
+        <section>
+            <a href="#" >Forgot Password?</a>
+        </section>
+    </div>
+    <div class="input-submit">
+        <button class="submit-btn" id="submit"></button>
+        <label for="submit">Register</label>
+    </div>
+    <div class="sign-in-link">
+        <p>Have account? <a href="#sign">Sign in</a></p>
+    </div>
+</div>
+</div>
+<!--Sign in section-->
+<div class="start" id="sign">
+<div class="login-box">
+    <div class="login-header">
+        <h1>Login</h1>
+    </div>
+    <div class="input-box">
+        <input type="email" class="input-field" placeholder="email " autocomplete="off" required>
+    </div>   <div class="input-box">
+        <input type="password" class="input-field" placeholder="password " autocomplete="off" required>
+    </div>
+    <div class="forgot">
+        <section>
+            <input type="checkbox" id="check">
+            <label for="check">Remember me</label>
+        </section>
+        <section>
+            <a href="#" >Forgot Password?</a>
+        </section>
+    </div>
+    <div class="input-submit">
+        <button class="submit-btn" id="submit"></button>
+        <label for="submit">Sign in</label>
+    </div>
+</div>
+</div>
 
-        </div>
-    </section>
+<!--tentang section-->
+<section class="about">
+<div class="tentang" id="about">
+        <img src="minyakjelantah.jpeg">
+        <div class="about-text">
+            <h1>About Us</h1>
+       <h3>Apa itu MIJEL?</h3>
+        <P>MIJEL atau Minyak Jelantah 
+            Platform Solusi Pengelolaan dan Pemanfaatan Minyak Jelantah.
+            Minyak jelantah yang dibuang sembarangan dapat mencemari lingkungan, khususnya tanah dan air. Dengan mengolah dan memanfaatkan kembali minyak jelantah, kita tidak hanya mengurangi dampak lingkungan, tetapi juga menciptakan peluang ekonomi baru.  
+            Di sini, kami menghadirkan solusi terpadu untuk pengelolaan minyak jelantah Anda. Website ini dirancang untuk membantu masyarakat untuk mengolah minyak jelantah secara bertanggung jawab dan menjadikannya sumber pendapatan atau bahan baku bernilai tinggi.  
+            Mari bergabung bersama kami untuk menciptakan lingkungan yang lebih bersih dan berkelanjutan!</P>
+    </div>
+</div>
+</section>
+
+
+
+
+
 
 <!-- Penjadwalan -->
+
+<!--Section informasi-->
+<section class="info">
+    <div class="contact" id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Kami siap membantu Anda! Jika Anda memiliki pertanyaan, ingin bekerja sama, 
+                atau membutuhkan informasi lebih lanjut tentang pengolahan dan pemanfaatan minyak jelantah, 
+                jangan ragu untuk menghubungi kami melalui:</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Sidoarjo, Jawa Timur</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+62 8090-0909</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>mijelsatpam@gmail.com</p>
+                    </div>
+                </div>
+    </div>
+</section>
+
+
+
 
 
 

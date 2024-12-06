@@ -9,12 +9,6 @@ a{
 ul{
     list-style: none;
 }
-li{
-    display: inline-block;
-}
-li a{
-    margin-left: 40px;
-}
 
 
 /* navbar*/
@@ -25,20 +19,21 @@ li a{
   display: flex;
   width: 100%;
   justify-content: space-between;  
-  padding: 25px 35px;
-  z-index: 1000;
-
+  padding: 20px;
+  color: #FF7D29 ;
 }
 .nav-link {
     display: flex;
     align-items: center;
+}
+.nav-link  li{
+margin: 0 30px;
+}
+.nav-link a{
     color: #FF7D29;
 }
-.nav-link li {
-    margin: 0 30px;
-}
 .navbar-logo h1{
-    font-size: 40px;
+    font-size: 60px;
     color: #FF7D29;
 }
 
@@ -48,30 +43,34 @@ header {
     background: url(coveer.png);
     background-position: bottom;
     background-size: cover;
-    display: flex;
-    align-items:flex-end;
+    display: flex; 
+    align-items:flex-start;
 }
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 270px;
+    margin-top: 270px;
     color: #FF7D29;
 }
 .header-content h2{
     color: black;
-    margin-top: 10px;
-    margin-left: 120px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    margin-top: 100px;
 }
 .ctn {
     padding: 8px 20px;
     background-color: #FFBF78;
     border-radius: 20px;
     color:black ;
+    margin-left: 200px;
+    margin-top: 150px;
+    cursor: pointer;
+
 }
 .header-content h1 {
     font: size 7vmin;
-    margin-top: 4px;
-    margin-bottom: 170px;
-    margin-left: 120px;
-
+    margin-bottom: 15px;
+    margin-left: 200px;
 }
 .menu-btn{
     position: absolute;
@@ -81,33 +80,226 @@ header {
     cursor: pointer;
     display: none;
 }
-/*home*/
-.home{
-    width: 100%;
+
+
+
+/*login page*/
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFEEA9;
+    width: 100vw;
     height: 100vh;
 }
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+.login-header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.login-header header{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+.input-box .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px ;
+    outline: none;
+    transition: .3s ;
+}
+::placeholder{
+    font-weight: 500;
+    color: #222;
+}
+.input-field {
+    width: 105%;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+section{
+    display: flex;
+    align-items:  center;
+    margin-bottom: 40px;
+    color: #555;
+}
+#check{
+    margin-right: 10px ;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color: #555;
+}
+.input-submit{
+    position: relative;
+}
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #FF7D29;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: black;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.submit-btn :hover{
+    background: #000;
+    transform: scale(1.05,1);
+}
+.sign-in-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.sign-in-link a{
+    color: #000;
+    font-weight: 600;
+}
+
+/* about */
+.about  {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 100px;
+    background-color: #ffffff;    
+}
+.about img{
+    height: auto;
+    width: 460px;
+    margin-top: 220px;
+}
+.about-text{
+    width: 550px;
+}
+.tentang{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #FF7D29;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h3{
+    color: #c76726;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+/*informasi*/
 .info{
-    margin-top: 60px; /* Memberikan ruang agar konten tidak tertutupi navbar */
-    padding: 20px;
-    width: 80%;
-    margin: 80px auto;
-    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  background-color: #FFEEA9;
+}
+.info .content{
+    max-width: 800px;
+    text-align: center;
+}
+ .info .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff7d29;
+ }
+ .info .content p{
+    font-weight: 300;
+    color: #000;
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px; 
+    margin-left: 30px;
+
+}
+.container .contactinfo{
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
-.info h1{
-    font-size: 27px;
-    color: #FF7D29;
-    text-align: center;
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px ;
+    height: 60px;
+    background: #FFBF78;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 140px;
-    margin-top: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #000;
 }
 
 
+
 /* penjadwalan */
+.jadwal{
+    width: 100vw;
+    height: 100vh;
+}
 
-
+/* Toko */
+.toko{
+    width: 100vw;
+    height: 100vh;
+}
 
   
 /* mobile device */
@@ -115,7 +307,7 @@ header {
     .menu-btn{
         display: block;
     }
-    .navbar {
+   .navbar {
         padding: 0;
     }
     .logo {
@@ -123,7 +315,7 @@ header {
         top: 30px;
         left: 30px;
     }
-    .nav-link {
+    .nav-link{
         flex-direction: column;
         width: 100%;
         height: 100vh;
